@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>
+      BMI Calculator - Revou Fundamental Course Case Study: Software Engineering
+    </title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main-content">
+        <h2 style="text-align: center">BMI Calculator</h2>
+        <h2 style="text-align: center" id="minititle">
+          Revou Fundamental Course Case Study: Software Engineering
+        </h2>
+        <form>
+          <p>Jenis Kelamin:</p>
+          <input type="radio" name="gender" id="male" value="male" checked />
+          <label for="male">Pria</label>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Wanita</label>
+
+          <p class="inputs">
+            <label>Berat (KG): </label>
+            <input type="number" id="bb" min="1" />
+          </p>
+
+          <p class="inputs">
+            <label>Tinggi (CM): </label>
+            <input type="number" id="tb" min="1" />
+          </p>
+
+          <button class="calcBtn">Hitung</button>
+          <div style="margin-top: 20px; text-align: center">
+            BMI Anda adalah:
+            <p id="hasil"></p>
+          </div>
+          <p id="pesan"></p>
+        </form>
+      </div>
+      <div class="additional-info">
+        <div id="gambar-container"></div>
+        <div id="nasihat-container"></div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
